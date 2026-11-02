@@ -1,14 +1,24 @@
-#include <iostream> // Введення даних і виведення результатів
-#include <iomanip>  // Рівні стовпчики таблиці
-#include <cmath>    // cos, fabs, remainder та перевірка чисел
+#include <iostream>
+#include <cctype>
+#include <cstdio>
+#include <iomanip>
+#include <cmath>
 #ifdef _WIN32
-#include <windows.h> // Українські літери у консолі Windows
+#include <windows.h>
 #endif
 
 using namespace std;
 
-void printTaskInfo()
-{
+// Вмикаємо українські літери в консолі Windows
+void setupConsole() {
+#ifdef _WIN32
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
+#endif
+}
+
+// Виводимо умову та автора
+void printTaskInfo() {
     cout << "========================Завдання========================" << endl;
     cout << "Лабораторна робота №4. Завдання 1." << endl;
     cout << "Автор: Степан Ричіхін, ІПЗ-11" << endl;
@@ -20,147 +30,178 @@ void printTaskInfo()
     cout << "========================================================" << endl;
 }
 
-// Рахуємо косинус через ряд: 1 - x*x/2! + x*x*x*x/4! - ...
-double cosSum(double x, double eps)
-{
-    const double pi = 3.14159265358979323846;
+// Перевіряємо введення і символ після останнього числа
+bool checkInput() {
+    bool valid = bool(cin);
 
-    // Косинус повторюється через 2*pi. Зменшуємо аргумент,
-    // щоб для великих x члени ряду не ставали дуже великими.
-    x = remainder(x, 2 * pi);
-
-    double a = 1;   // Перший член ряду
-    double sum = 1; // Сума спочатку дорівнює першому члену
-    int k = 1;     // Номер наступного члена
-
-    while (true)
-    {
-        // Отримуємо новий член із попереднього.
-        // Окремо степінь і факторіал не обчислюємо.
-        a = -a * x * x / ((2.0 * k - 1) * (2.0 * k));
-
-        // Якщо наступний член уже малий, його можна не додавати.
-        if (fabs(a) <= eps)
-            break;
-
-        sum += a;
-        k++;
+    if (valid) {
+        int next = cin.peek();
+        // Після числа має бути пробіл новий рядок або кінець введення
+        valid = next == EOF || isspace(next);
     }
 
-    return sum;
+    return valid;
 }
 
-int main()
-{
-#ifdef _WIN32
-    // Налаштовуємо українські літери у Windows.
-    SetConsoleOutputCP(CP_UTF8);
-    SetConsoleCP(CP_UTF8);
-#endif
-
-    printTaskInfo();
-
-    double start, end, step, eps;
-
+// Зчитуємо межі таблиці крок і точність
+void getData(double &start, double &end, double &step, double &eps) {
     cout << "Введіть мінімальне і максимальне x: ";
     cin >> start >> end;
     cout << "Введіть крок: ";
     cin >> step;
     cout << "Введіть точність (наприклад, 0.0001): ";
     cin >> eps;
+}
 
-    // Не починаємо обчислення, якщо замість чисел введено текст.
-    if (!cin || !isfinite(start) || !isfinite(end) ||
-        !isfinite(step) || !isfinite(eps))
-    {
-        cout << "Помилка: потрібно ввести скінченні числа." << endl;
-        return 1;
+// Перевіряємо чи підходять дані для обчислення
+bool checkData(double start, double end, double step, double eps) {
+    bool valid = checkInput();
+    valid = valid && isfinite(start) && isfinite(end);
+    valid = valid && isfinite(step) && isfinite(eps);
+    valid = valid && start <= end && step > 0;
+    valid = valid && eps >= 0.000001 && eps <= 0.01;
+    return valid;
+}
+
+// Пояснюємо які дані можна вводити
+void printError() {
+    cout << "Помилка: введіть скінченні числа початок не більший за кінець." << endl;
+    cout << "Крок має бути додатним, точність — від 0.000001 до 0.01." << endl;
+}
+
+// Рахуємо косинус через ряд без степенів і факторіалів
+double cosSum(double x, double eps) {
+    const double pi = 3.14159265358979323846;
+    // Зменшуємо аргумент бо косинус повторюється через повний оберт
+    x = remainder(x, 2 * pi);
+
+    double sum = 1;         // Перший член ряду
+    double a = -x * x / 2; // Наступний член
+    int k = 1;
+
+    // Додаємо тільки ті члени які ще більші за точність
+    while (fabs(a) > eps) {
+        sum += a;
+        k++;
+        // Новий член отримуємо з попереднього
+        a = -a * x * x / ((2.0 * k - 1) * (2.0 * k));
     }
 
-    // Рухаємося від меншого x до більшого з додатним кроком.
-    if (start > end || step <= 0)
-    {
-        cout << "Помилка: початок має бути не більшим за кінець, а крок — додатним." << endl;
-        return 1;
+    return sum;
+}
+
+// Обчислюємо y через нашу функцію косинуса
+double getSeriesValue(double x, double eps) {
+    // Беремо запас точності бо косинуси ще множаться або діляться
+    double a = cosSum(x / 2, eps / 10);
+    double result = 0;
+
+    if (x <= 0) {
+        double b = cosSum(x * x, eps / 10);
+        result = a / b;
+    } else {
+        double b = cosSum(2 * x, eps / 10);
+        result = a * a * b;
     }
 
-    if (eps < 0.000001 || eps > 0.01)
-    {
-        cout << "Помилка: точність має бути від 0.000001 до 0.01." << endl;
-        return 1;
+    return result;
+}
+
+// Обчислюємо y через бібліотечний косинус для порівняння
+double getStandardValue(double x) {
+    double a = cos(x / 2);
+    double result = 0;
+
+    if (x <= 0) {
+        result = a / cos(x * x);
+    } else {
+        result = a * a * cos(2 * x);
     }
 
-    // Назви стовпчиків відповідають умові роботи.
+    return result;
+}
+
+// Виводимо назви стовпчиків таблиці
+void printHeader() {
     cout << "\nЗначення аргумента x | Значення функції y | Стандартне значення функції | Похибка" << endl;
     cout << "--------------------------------------------------------------------------------------" << endl;
     cout << fixed << setprecision(8);
+}
 
-    double x = start;
-    while (x <= end)
-    {
-        cout << setw(20) << x << " | ";
+// Виводимо один готовий рядок із результатами
+void printValues(double result, double standard) {
+    // За умовою потрібна різниця модулів вона може бути від'ємною
+    double error = fabs(result) - fabs(standard);
+    cout << setw(18) << result << " | "
+         << setw(27) << standard << " | "
+         << scientific << setprecision(3) << error
+         << fixed << setprecision(8) << endl;
+}
 
-        // Для x < -1 в умові немає жодної формули.
-        if (x < -1)
-        {
-            cout << "function is not defined" << endl;
-        }
-        else if (!isfinite(2 * x))
-        {
-            // Для надто великого x число 2*x вже не вміщується у double.
-            cout << "Аргумент 2*x завеликий для обчислення." << endl;
-        }
-        else
-        {
-            double y, standard;
+// Перевіряємо аргумент і готуємо рядок таблиці
+void printRow(double x, double eps) {
+    cout << setw(20) << x << " | ";
 
-            // Беремо меншу похибку для окремих косинусів,
-            // бо далі їх значення ще множаться або діляться.
-            double a = cosSum(x / 2, eps / 10);
+    if (x < -1) {
+        cout << "function is not defined" << endl;
+    } else if (!isfinite(2 * x)) {
+        cout << "Аргумент 2*x завеликий для обчислення." << endl;
+    } else {
+        double result = getSeriesValue(x, eps);
+        double standard = getStandardValue(x);
+        printValues(result, standard);
+    }
+}
 
-            if (x <= 0)
-            {
-                // Тут x*x лежить від 0 до 1, тому cos(x*x) не дорівнює нулю.
-                double b = cosSum(x * x, eps / 10);
-                y = a / b;
-                standard = cos(x / 2) / cos(x * x);
-            }
-            else
-            {
-                double b = cosSum(2 * x, eps / 10);
-                y = a * a * b;
-                standard = cos(x / 2) * cos(x / 2) * cos(2 * x);
-            }
+// Знаходимо наступне x із поправкою на округлення дробових чисел
+double getNextX(double x, double end, double step) {
+    double next = x + step;
 
-            // За умовою віднімаємо саме абсолютні значення результатів.
-            double error = fabs(y) - fabs(standard);
-
-            cout << setw(18) << y << " | "
-                 << setw(27) << standard << " | "
-                 << scientific << setprecision(3) << error
-                 << fixed << setprecision(8) << endl;
-        }
-
-        // Останнє значення вже оброблено — завершуємо цикл.
-        if (x == end)
-            break;
-
-        double next = x + step;
-
-        // Дуже малий крок може не змінити число через округлення.
-        if (next <= x)
-        {
-            cout << "Помилка: крок замалий для цих значень x." << endl;
-            return 1;
-        }
-
-        // Наприклад, 0.1 + 0.2 може трохи відрізнятися від 0.3.
-        // Прибираємо таку маленьку неточність біля кінця таблиці.
-        if (isfinite(next) && next > end && next - end <= step * 1e-9)
-            next = end;
-
-        x = next;
+    // Наприклад одна десята плюс дві десяті може бути трохи більшим за три десяті
+    if (isfinite(next) && next > end && next - end <= step * 1e-9) {
+        next = end;
     }
 
-    return 0;
+    return next;
+}
+
+// Проходимо всі значення x та виводимо таблицю
+void printTable(double start, double end, double step, double eps) {
+    double x = start;
+    bool more = true; // Чи залишилися значення для таблиці
+    printHeader();
+
+    while (more) {
+        printRow(x, eps);
+        more = x < end;
+
+        if (more) {
+            double next = getNextX(x, end, step);
+            // Продовжуємо тільки тоді коли x збільшується і не виходить за межу
+            more = next > x && next <= end;
+            if (next <= x) {
+                cout << "Помилка: крок замалий для цих значень x." << endl;
+            }
+            x = next;
+        }
+    }
+}
+
+// Поєднуємо введення перевірку та побудову таблиці
+void runTask() {
+    double start = 0, end = 0, step = 0, eps = 0;
+    getData(start, end, step, eps);
+
+    if (checkData(start, end, step, eps)) {
+        printTable(start, end, step, eps);
+    } else {
+        printError();
+    }
+}
+
+// У main залишаємо тільки виклики функцій
+int main() {
+    setupConsole();
+    printTaskInfo();
+    runTask();
 }

@@ -1,14 +1,22 @@
-#include <iostream> // Введення числа та виведення його цифр
-#include <cctype>   // Перевірка пробілу після числа
-#include <cstdio>   // Позначення кінця введення EOF
+#include <iostream>
+#include <cctype>
+#include <cstdio>
 #ifdef _WIN32
-#include <windows.h> // Українські літери в консолі Windows
+#include <windows.h>
 #endif
 
 using namespace std;
 
-void printTaskInfo()
-{
+// Вмикаємо українські літери в консолі Windows
+void setupConsole() {
+#ifdef _WIN32
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
+#endif
+}
+
+// Виводимо умову та автора
+void printTaskInfo() {
     cout << "========================Завдання========================" << endl;
     cout << "Лабораторна робота №5. Завдання 2." << endl;
     cout << "Автор: Степан Ричіхін, ІПЗ-11" << endl;
@@ -20,49 +28,72 @@ void printTaskInfo()
     cout << "========================================================" << endl;
 }
 
-// Виводимо цифри числа справа наліво, не зберігаючи їх у масиві чи рядку.
-void printDigits(long long n)
-{
-    // Остача від ділення на 10 — це остання цифра числа.
-    cout << n % 10;
+// Перевіряємо введення і символ після останнього числа
+bool checkInput() {
+    bool valid = bool(cin);
 
-    // Якщо число має ще цифри, продовжуємо обробку.
-    if (n >= 10)
-    {
-        cout << ' '; // Пробіл розділяє дві сусідні цифри
-
-        // Цілочисельне ділення на 10 прибирає останню цифру.
-        // Наприклад, 123 / 10 дає 12.
-        printDigits(n / 10);
+    if (valid) {
+        int next = cin.peek();
+        // Після числа має бути пробіл новий рядок або кінець введення
+        valid = next == EOF || isspace(next);
     }
 
-    // Для однієї цифри новий виклик не потрібний — рекурсія закінчується.
+    return valid;
 }
 
-int main()
-{
-#ifdef _WIN32
-    SetConsoleOutputCP(CP_UTF8);
-    SetConsoleCP(CP_UTF8);
-#endif
-
-    printTaskInfo();
-
-    // Число зберігаємо саме як ціле, а не як текст.
-    long long n;
+// Зчитуємо число як ціле а не як текст
+long long getNumber() {
+    long long n = 0;
     cout << "Введіть n: ";
     cin >> n;
+    return n;
+}
 
-    // Перевіряємо введення без використання циклів або рядків.
-    if (!cin || n <= 0 || (cin.peek() != EOF && !isspace(cin.peek())))
-    {
-        cout << "Помилка: введіть ціле додатне число в межах типу long long." << endl;
-        return 1;
+// Перевіряємо введення без циклів масивів і рядків
+bool checkNumber(long long n) {
+    bool valid = checkInput() && n > 0;
+    return valid;
+}
+
+// Виводимо цифри справа наліво через рекурсію
+void printDigits(long long n) {
+    // Остача від ділення на 10 — остання цифра
+    cout << n % 10;
+
+    if (n >= 10) {
+        cout << ' ';
+        // Ділення на 10 прибирає останню цифру
+        printDigits(n / 10);
     }
+    // Для однієї цифри наступний виклик уже не потрібний
+}
 
+// Виводимо пояснення та всі цифри числа
+void printResult(long long n) {
     cout << "Цифри у зворотному порядку: ";
     printDigits(n);
     cout << endl;
+}
 
-    return 0;
+// Повідомляємо про неправильне введення
+void printError() {
+    cout << "Помилка: введіть ціле додатне число в межах типу long long." << endl;
+}
+
+// Обробляємо число тільки після перевірки
+void runTask() {
+    long long n = getNumber();
+
+    if (checkNumber(n)) {
+        printResult(n);
+    } else {
+        printError();
+    }
+}
+
+// У main залишаємо тільки виклики функцій
+int main() {
+    setupConsole();
+    printTaskInfo();
+    runTask();
 }

@@ -1,14 +1,22 @@
-#include <iostream> // Введення чисел і виведення відповіді
-#include <cctype>   // Перевірка пробілу після введеного числа
-#include <cstdio>   // EOF означає кінець введення
+#include <iostream>
+#include <cctype>
+#include <cstdio>
 #ifdef _WIN32
-#include <windows.h> // Українські літери в консолі Windows
+#include <windows.h>
 #endif
 
 using namespace std;
 
-void printTaskInfo()
-{
+// Вмикаємо українські літери в консолі Windows
+void setupConsole() {
+#ifdef _WIN32
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
+#endif
+}
+
+// Виводимо умову та автора
+void printTaskInfo() {
     cout << "========================Завдання========================" << endl;
     cout << "Лабораторна робота №5. Завдання 1." << endl;
     cout << "Автор: Степан Ричіхін, ІПЗ-11" << endl;
@@ -19,99 +27,125 @@ void printTaskInfo()
     cout << "========================================================" << endl;
 }
 
-// Рекурсивно знаходимо НСД за співвідношенням з умови.
-long long gcdRec(long long a, long long b, int &depth)
-{
-    // Кожен виклик додає один рівень. Перший виклик теж рахуємо.
-    // Виклики утворюють один ланцюжок, тому це його найбільша глибина.
-    depth++;
+// Перевіряємо введення і символ після останнього числа
+bool checkInput() {
+    bool valid = bool(cin);
 
-    // Якщо b ділиться на a без остачі, то НСД дорівнює a.
-    if (b % a == 0)
-        return a;
-
-    // Якщо a ділиться на b без остачі, то НСД дорівнює b.
-    if (a % b == 0)
-        return b;
-
-    // Замінюємо більше число остачею від ділення на менше.
-    // Остача не нульова, бо подільність уже перевірили вище.
-    if (b >= a)
-        return gcdRec(a, b % a, depth);
-
-    return gcdRec(a % b, b, depth);
-}
-
-// Знаходимо той самий НСД, але замість рекурсії використовуємо цикл.
-long long gcdLoop(long long a, long long b, int &count)
-{
-    count = 0; // Спочатку жодна ітерація ще не виконувалася
-
-    // Працюємо, поки жодне число не ділиться на інше без остачі.
-    while (b % a != 0 && a % b != 0)
-    {
-        if (b >= a)
-            b = b % a;
-        else
-            a = a % b;
-
-        // Рахуємо саме виконання тіла циклу.
-        count++;
+    if (valid) {
+        int next = cin.peek();
+        // Після числа має бути пробіл новий рядок або кінець введення
+        valid = next == EOF || isspace(next);
     }
 
-    // Після циклу одне число вже є дільником іншого.
-    if (b % a == 0)
-        return a;
-
-    return b;
+    return valid;
 }
 
-int main()
-{
-#ifdef _WIN32
-    SetConsoleOutputCP(CP_UTF8);
-    SetConsoleCP(CP_UTF8);
-#endif
-
-    printTaskInfo();
-
-    // long long дозволяє вводити і досить великі цілі числа.
-    long long m, n;
+// Зчитуємо два натуральних числа
+void getNumbers(long long &m, long long &n) {
     cout << "Введіть m та n: ";
     cin >> m >> n;
+}
 
-    // Натуральні числа мають бути цілими й більшими за нуль.
-    // peek дивиться на наступний символ, а isspace перевіряє пробіл.
-    // Так, наприклад, число 12.5 не буде прийняте за ціле 12.
-    if (!cin || m <= 0 || n <= 0 ||
-        (cin.peek() != EOF && !isspace(cin.peek())))
-    {
-        cout << "Помилка: введіть два цілі додатні числа в межах типу long long." << endl;
-        return 1;
+// Натуральні числа мають бути цілими й більшими за нуль
+bool checkNumbers(long long m, long long n) {
+    bool valid = checkInput() && m > 0 && n > 0;
+    return valid;
+}
+
+// Рекурсивно знаходимо НСД за співвідношенням з умови
+long long getGcdRec(long long a, long long b, int &depth) {
+    // Кожен виклик додає один рівень перший виклик теж рахуємо
+    depth++;
+    long long result = 0;
+
+    if (b % a == 0) {
+        result = a; // b ділиться на a без остачі
+    } else if (a % b == 0) {
+        result = b; // a ділиться на b без остачі
+    } else if (b >= a) {
+        // Замінюємо більше число остачею від ділення на менше
+        result = getGcdRec(a, b % a, depth);
+    } else {
+        result = getGcdRec(a % b, b, depth);
     }
 
-    int depth = 0; // Глибина рекурсії, включно з першим викликом
-    int count = 0; // Кількість виконань тіла циклу
+    return result;
+}
 
-    // Обидві функції отримують однакові початкові числа.
-    // Вони працюють із копіями, тому m та n не змінюються.
-    long long result1 = gcdRec(m, n, depth);
-    long long result2 = gcdLoop(m, n, count);
+// Знаходимо той самий НСД але за допомогою циклу
+long long getGcdLoop(long long a, long long b, int &count) {
+    count = 0;
 
-    cout << "\nНСД через рекурсію: " << result1 << endl;
+    // Працюємо поки жодне число не ділиться на інше без остачі
+    while (b % a != 0 && a % b != 0) {
+        if (b >= a) {
+            b = b % a;
+        } else {
+            a = a % b;
+        }
+        count++; // Рахуємо виконання тіла циклу
+    }
+
+    long long result = b;
+    if (b % a == 0) {
+        result = a;
+    }
+
+    return result;
+}
+
+// Виводимо результати обох способів та лічильники
+void printResult(long long resultRec, long long resultLoop, int depth, int count) {
+    cout << "\nНСД через рекурсію: " << resultRec << endl;
     cout << "Глибина рекурсії: " << depth << endl;
-    cout << "НСД через цикл: " << result2 << endl;
+    cout << "НСД через цикл: " << resultLoop << endl;
     cout << "Кількість ітерацій циклу: " << count << endl;
 
-    // Перевіряємо, чи обидва способи дали однакову відповідь.
-    if (result1 == result2)
+    if (resultRec == resultLoop) {
         cout << "Результати обох способів збігаються." << endl;
-    else
+    } else {
         cout << "Результати обох способів відрізняються." << endl;
+    }
+}
 
+// Коротко пояснюємо різницю між двома способами
+void printComparison() {
     cout << "\nПерший виклик входить у глибину рекурсії." << endl;
     cout << "Обидва способи виконують однакову кількість замін чисел остачами." << endl;
     cout << "Цикл не створює ланцюжок вкладених викликів функції." << endl;
+}
 
-    return 0;
+// Отримуємо відповіді для однакових початкових чисел
+void solveTask(long long m, long long n) {
+    int depth = 0; // Глибина разом із першим викликом
+    int count = 0; // Кількість ітерацій
+    // Функції працюють із копіями тому m та n не змінюються
+    long long resultRec = getGcdRec(m, n, depth);
+    long long resultLoop = getGcdLoop(m, n, count);
+    printResult(resultRec, resultLoop, depth, count);
+    printComparison();
+}
+
+// Пояснюємо які числа потрібно ввести
+void printError() {
+    cout << "Помилка: введіть два цілі додатні числа в межах типу long long." << endl;
+}
+
+// Керуємо порядком роботи програми
+void runTask() {
+    long long m = 0, n = 0;
+    getNumbers(m, n);
+
+    if (checkNumbers(m, n)) {
+        solveTask(m, n);
+    } else {
+        printError();
+    }
+}
+
+// У main залишаємо тільки виклики функцій
+int main() {
+    setupConsole();
+    printTaskInfo();
+    runTask();
 }

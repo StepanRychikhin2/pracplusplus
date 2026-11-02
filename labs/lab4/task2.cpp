@@ -1,13 +1,23 @@
-#include <iostream> // Введення n і виведення відповіді
-#include <iomanip>  // Кількість цифр після крапки
+#include <iostream>
+#include <cctype>
+#include <cstdio>
+#include <iomanip>
 #ifdef _WIN32
-#include <windows.h> // Українські літери у консолі Windows
+#include <windows.h>
 #endif
 
 using namespace std;
 
-void printTaskInfo()
-{
+// Вмикаємо українські літери в консолі Windows
+void setupConsole() {
+#ifdef _WIN32
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
+#endif
+}
+
+// Виводимо умову та автора
+void printTaskInfo() {
     cout << "========================Завдання========================" << endl;
     cout << "Лабораторна робота №4. Завдання 2." << endl;
     cout << "Автор: Степан Ричіхін, ІПЗ-11" << endl;
@@ -17,49 +27,72 @@ void printTaskInfo()
     cout << "========================================================" << endl;
 }
 
-// Починаємо з найглибшого дробу і поступово рухаємося назовні.
-double fraction(int n)
-{
-    double f = 0; // Спочатку ще немає обчисленої частини дробу
+// Перевіряємо введення і символ після останнього числа
+bool checkInput() {
+    bool valid = bool(cin);
 
-    for (int i = n; i >= 1; i--)
-    {
-        // Знаменники йдуть у зворотному порядку: 2*n+1, ..., 5, 3.
-        // 2.0 потрібне, щоб множення виконувалося як для дробових чисел.
+    if (valid) {
+        int next = cin.peek();
+        // Після числа має бути пробіл новий рядок або кінець введення
+        valid = next == EOF || isspace(next);
+    }
+
+    return valid;
+}
+
+// Зчитуємо кількість знаменників дробу
+int getNumber() {
+    int n = 0;
+    cout << "Введіть n: ";
+    cin >> n;
+    return n;
+}
+
+// Не приймаємо текст дробові та недодатні числа
+bool checkNumber(int n) {
+    bool valid = checkInput() && n > 0;
+    return valid;
+}
+
+// Рахуємо дріб знизу вгору
+double getFraction(int n) {
+    double f = 0; // Уже обчислена внутрішня частина дробу
+
+    for (int i = n; i >= 1; i--) {
+        // Знаменники йдуть від 2*n+1 до 3
         f = 1.0 / (2.0 * i + 1 + f);
     }
 
-    // Додаємо одиницю, яка стоїть перед усім дробом.
-    return 1 + f;
+    double result = 1 + f; // Одиниця перед усім дробом
+    return result;
 }
 
-int main()
-{
-#ifdef _WIN32
-    SetConsoleOutputCP(CP_UTF8);
-    SetConsoleCP(CP_UTF8);
-#endif
-
-    printTaskInfo();
-
-    int n;
-    cout << "Введіть n: ";
-    cin >> n;
-
-    // Дріб має містити хоча б один знаменник.
-    // Після цілого числа допускаємо лише пробіл або кінець введення.
-    if (!cin || n < 1 || (cin.peek() != '\n' && cin.peek() != '\r' &&
-                          cin.peek() != ' ' && cin.peek() != '\t' && cin.peek() != EOF))
-    {
-        cout << "Помилка: n має бути цілим додатним числом." << endl;
-        return 1;
-    }
-
-    // Обчислення винесено в окрему функцію.
-    double result = fraction(n);
-
+// Виводимо відповідь із десятьма знаками після крапки
+void printResult(double result) {
     cout << fixed << setprecision(10);
     cout << "Значення дробу: " << result << endl;
+}
 
-    return 0;
+// Повідомляємо про неправильне введення
+void printError() {
+    cout << "Помилка: n має бути цілим додатним числом у межах типу int." << endl;
+}
+
+// Запускаємо обчислення тільки для правильних даних
+void runTask() {
+    int n = getNumber();
+
+    if (checkNumber(n)) {
+        double result = getFraction(n);
+        printResult(result);
+    } else {
+        printError();
+    }
+}
+
+// У main залишаємо тільки виклики функцій
+int main() {
+    setupConsole();
+    printTaskInfo();
+    runTask();
 }
