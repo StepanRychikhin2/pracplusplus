@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="page1" name="Основна програма">
+    <mxGraphModel background="#ffffff" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1100" pageHeight="1600" arrows="1" connect="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="s" value="Початок" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="360" y="30" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="input" value="Ввести m та n" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="340" y="150" width="340" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="valid" value="Введено цілі числа?&#10;m &gt; 0 та n &gt; 0?&#10;Числа в межах long long?" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;rhombus;" vertex="1" parent="1">
+          <mxGeometry x="320" y="280" width="380" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="error" value="Вивести повідомлення&#10;про помилку" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="780" y="315" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="init" value="depth = 0; count = 0" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="500" width="340" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="rec" value="result1 = gcdRec(m, n, depth)" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="630" width="380" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="loop" value="result2 = gcdLoop(m, n, count)" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="760" width="380" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="output" value="Вивести result1, depth,&#10;result2 та count" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="320" y="890" width="380" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="equal" value="result1 = result2?" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;rhombus;" vertex="1" parent="1">
+          <mxGeometry x="350" y="1040" width="320" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="yes" value="Вивести: результати&#10;збігаються" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1220" width="320" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="no" value="Вивести: результати&#10;відрізняються" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="620" y="1220" width="320" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="compare" value="Вивести пояснення&#10;про виклики та цикл" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="340" y="1360" width="340" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="end" value="Кінець" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1490" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge0" source="s" target="input" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" source="input" target="valid" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" source="valid" target="error" value="Ні" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" source="valid" target="init" value="Так" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4" source="init" target="rec" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge5" source="rec" target="loop" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge6" source="loop" target="output" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge7" source="output" target="equal" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge8" source="equal" target="yes" value="Так" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge9" source="equal" target="no" value="Ні" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge10" source="yes" target="compare" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge11" source="no" target="compare" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge12" source="compare" target="end" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge13" source="error" target="end" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page2" name="Рекурсивний НСД">
+    <mxGraphModel background="#ffffff" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1100" pageHeight="1600" arrows="1" connect="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="s" value="gcdRec(a, b, depth)" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="350" y="30" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="depth" value="depth = depth + 1" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="150" width="340" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="base1" value="b mod a = 0?" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;rhombus;" vertex="1" parent="1">
+          <mxGeometry x="360" y="280" width="300" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="returna" value="Повернути a" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="780" y="310" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="base2" value="a mod b = 0?" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;rhombus;" vertex="1" parent="1">
+          <mxGeometry x="360" y="480" width="300" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="returnb" value="Повернути b" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="780" y="510" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="larger" value="b ≥ a?" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;rhombus;" vertex="1" parent="1">
+          <mxGeometry x="380" y="680" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="rec1" value="Викликати gcdRec(a, b mod a, depth)&#10;та отримати результат" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="880" width="420" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rec2" value="Викликати gcdRec(a mod b, b, depth)&#10;та отримати результат" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="880" width="420" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="end" value="Повернути отриманий результат" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="310" y="1110" width="400" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="edge0" source="s" target="depth" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" source="depth" target="base1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" source="base1" target="returna" value="Так" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" source="base1" target="base2" value="Ні" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4" source="base2" target="returnb" value="Так" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge5" source="base2" target="larger" value="Ні" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge6" source="larger" target="rec1" value="Так" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge7" source="larger" target="rec2" value="Ні" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge8" source="rec1" target="end" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge9" source="rec2" target="end" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page3" name="НСД через цикл">
+    <mxGraphModel background="#ffffff" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1100" pageHeight="1600" arrows="1" connect="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="s" value="gcdLoop(a, b, count)" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="350" y="30" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="init" value="count = 0" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="150" width="340" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cond" value="b mod a ≠ 0&#10;і a mod b ≠ 0?" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;rhombus;" vertex="1" parent="1">
+          <mxGeometry x="340" y="280" width="340" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="larger" value="b ≥ a?" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;rhombus;" vertex="1" parent="1">
+          <mxGeometry x="380" y="490" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="b" value="b = b mod a" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="680" width="270" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="a" value="a = a mod b" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="680" width="270" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="count" value="count = count + 1" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="840" width="340" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="divides" value="b mod a = 0?" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;rhombus;" vertex="1" parent="1">
+          <mxGeometry x="740" y="1030" width="300" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="returna" value="Повернути a" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="560" y="1270" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="returnb" value="Повернути b" style="whiteSpace=wrap;html=0;fontSize=16;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="850" y="1270" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge0" source="s" target="init" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" source="init" target="cond" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" source="cond" target="larger" value="Так" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" source="larger" target="b" value="Так" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4" source="larger" target="a" value="Ні" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge5" source="b" target="count" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge6" source="a" target="count" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge7" source="count" target="cond" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge8" source="cond" target="divides" value="Ні" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge9" source="divides" target="returna" value="Так" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge10" source="divides" target="returnb" value="Ні" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=14;labelBackgroundColor=#ffffff;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
