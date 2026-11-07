@@ -1,0 +1,405 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="page-1" name="Розкладання вектора">
+    <mxGraphModel background="#ffffff" grid="1" gridSize="10" page="1" pageWidth="1600" pageHeight="2940" pageScale="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" value="Початок" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="500" y="30" width="480" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="input" value="Ввести три координати X" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="500" y="150" width="480" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="validx" value="Числа в межах&#10;[-1000000; 1000000]?" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;rhombus;" vertex="1" parent="1">
+          <mxGeometry x="500" y="320" width="480" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="create" value="MakeVec()&#10;Обрати спосіб і створити три вектори" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;shape=process;" vertex="1" parent="1">
+          <mxGeometry x="500" y="550" width="480" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="valid" value="Вектори створено&#10;без помилки?" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;rhombus;" vertex="1" parent="1">
+          <mxGeometry x="500" y="720" width="480" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="error" value="Вивести помилку введення" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="500" width="360" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="vectors" value="Вивести X, a, b, c" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="500" y="950" width="480" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="det" value="d = Det(0); вивести d&#10;Знайти найбільші модулі координат:&#10;m1 для a, m2 для b, m3 для c" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1120" width="480" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zero" value="d == 0?" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;rhombus;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1340" width="480" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="dependent" value="Вектори лінійно залежні&#10;Єдиного розкладання немає&#10;Правило Крамера незастосовне" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="1340" width="360" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="small" value="|d| ≤ 10⁻¹²*m1*m2*m3?" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;rhombus;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1590" width="480" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="unstable" value="Вектори майже залежні&#10;Обчислення коефіцієнтів&#10;може бути нестійким" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="1590" width="360" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="cramer" value="d1 = Det(1)&#10;d2 = Det(2)&#10;d3 = Det(3)" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1850" width="480" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="output" value="k1 = d1/d; k2 = d2/d; k3 = d3/d&#10;PrintRes(): вивести коефіцієнти та&#10;X = k1*a + k2*b + k3*c" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="500" y="2070" width="480" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="check" value="Обчислити k1*a + k2*b + k3*c&#10;Вивести координати результату&#10;та найбільшу абсолютну похибку" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;shape=process;" vertex="1" parent="1">
+          <mxGeometry x="500" y="2290" width="480" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="end" value="Кінець" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="500" y="2770" width="480" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-0" source="start" target="input" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-1" source="input" target="validx" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-2" source="validx" target="create" value="Так" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-3" source="create" target="valid" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-4" source="valid" target="vectors" value="Так" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-5" source="vectors" target="det" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-6" source="det" target="zero" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-7" source="zero" target="small" value="Ні" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-8" source="small" target="cramer" value="Ні" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-9" source="cramer" target="output" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-10" source="output" target="check" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-11" source="check" target="end" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-12" source="validx" target="error" value="Ні" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1290" y="395" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-13" source="valid" target="error" value="Ні" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0.5;entryY=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1290" y="795" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-14" source="zero" target="dependent" value="Так" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-15" source="small" target="unstable" value="Так" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-16" source="error" target="end" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1570" y="545.0" />
+              <mxPoint x="1570" y="2800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-17" source="dependent" target="end" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1530" y="1415.0" />
+              <mxPoint x="1530" y="2800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-18" source="unstable" target="end" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1490" y="1665.0" />
+              <mxPoint x="1490" y="2800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-2" name="Створення векторів">
+    <mxGraphModel background="#ffffff" grid="1" gridSize="10" page="1" pageWidth="1600" pageHeight="1580" pageScale="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" value="Початок MakeVec" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="500" y="30" width="480" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="input" value="Ввести choice:&#10;1 — клавіатура; 2 — генерація" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="500" y="150" width="480" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="valid" value="choice — ціле&#10;число 1 або 2?" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;rhombus;" vertex="1" parent="1">
+          <mxGeometry x="500" y="320" width="480" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="invalid" value="ok = false" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="350" width="360" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="mode" value="choice == 1?" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;rhombus;" vertex="1" parent="1">
+          <mxGeometry x="500" y="550" width="480" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="read" value="Ввести координати a, b, c&#10;Перевірити кожне число&#10;ok — результат перевірки" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="40" y="820" width="360" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="random" value="Ініціалізувати генератор&#10;Кожна з 9 координат:&#10;rand() % 21 - 10&#10;ok = true" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="800" width="360" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="result" value="Глобальна ok зберігає&#10;результат перевірки введення" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1210" width="480" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="end" value="Кінець" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1420" width="480" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-0" source="start" target="input" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-1" source="input" target="valid" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-2" source="valid" target="mode" value="Так" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-3" source="valid" target="invalid" value="Ні" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-4" source="mode" target="read" value="Так" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="625" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-5" source="mode" target="random" value="Ні" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1290" y="625" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-6" source="read" target="result" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="1110" />
+              <mxPoint x="740" y="1110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-7" source="random" target="result" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1290" y="1110" />
+              <mxPoint x="740" y="1110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-8" source="invalid" target="result" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1540" y="395" />
+              <mxPoint x="1540" y="1255" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-9" source="result" target="end" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-3" name="Виведення коефіцієнта">
+    <mxGraphModel background="#ffffff" grid="1" gridSize="10" page="1" pageWidth="1600" pageHeight="2370" pageScale="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" value="Початок PrintNum&#10;Вхід: up, down ≠ 0" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="500" y="30" width="480" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="negative" value="down &lt; 0?" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;rhombus;" vertex="1" parent="1">
+          <mxGeometry x="500" y="210" width="480" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="sign" value="up = -up&#10;down = -down" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="240" width="360" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="convert" value="p = ціла частина up&#10;q = ціла частина down" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="470" width="480" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="integers" value="up == p&#10;і down == q?" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;rhombus;" vertex="1" parent="1">
+          <mxGeometry x="500" y="650" width="480" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="decimal" value="Вивести up / down&#10;як десяткове число" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="680" width="360" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="abs" value="positive = |p|&#10;Gcd(positive, q): працюємо з копіями p та q" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="890" width="480" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="gcd" value="temp = p % q&#10;p = q; q = temp" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1070" width="480" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="loop" value="q ≠ 0?" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;rhombus;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1280" width="480" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="reduce" value="common = p (результат Gcd)&#10;У PrintNum: p = p/common; q = q/common&#10;Вивести p" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1530" width="480" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="one" value="q ≠ 1?" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;rhombus;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1750" width="480" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="bottom" value="Вивести '/' та q" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="1780" width="360" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="end" value="Кінець" style="whiteSpace=wrap;html=0;fontSize=18;fontFamily=Arial;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;strokeWidth=2;spacing=10;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="500" y="2200" width="480" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-0" source="start" target="negative" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-1" source="negative" target="sign" value="Так" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-2" source="negative" target="convert" value="Ні" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-3" source="sign" target="convert" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1290" y="410" />
+              <mxPoint x="740" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-4" source="convert" target="integers" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-5" source="integers" target="decimal" value="Ні" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-6" source="integers" target="abs" value="Так" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-7" source="abs" target="gcd" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-8" source="gcd" target="loop" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-9" source="loop" target="gcd" value="Так" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1300" y="1355" />
+              <mxPoint x="1300" y="1010" />
+              <mxPoint x="740" y="1010" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-10" source="loop" target="reduce" value="Ні" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-11" source="reduce" target="one" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-12" source="one" target="bottom" value="Так" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-13" source="one" target="end" value="Ні" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-14" source="bottom" target="end" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1290" y="2110" />
+              <mxPoint x="740" y="2110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-15" source="decimal" target="end" value="" style="edgeStyle=none;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=17;strokeWidth=2;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1570" y="725" />
+              <mxPoint x="1570" y="2230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
