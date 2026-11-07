@@ -1,0 +1,618 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device" version="24.7.17">
+  <diagram id="sequence" name="Діаграма послідовності">
+    <mxGraphModel dx="1500" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1520" pageHeight="1760" math="0" shadow="0" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sequence-1" value="Замовлення квіткової композиції" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=26;fontStyle=1;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="50" y="24" width="1420" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-2" value="Діаграма послідовності UML · Успішний сценарій · Онлайн-оплата та самовивіз" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=15;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="50" y="70" width="1420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-3" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=0;fillColor=#ffffff;strokeColor=#263445;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="121" y="111" width="38" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-4" value="Покупець" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=16;fontStyle=1;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="40" y="179" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-5" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#8b97a3;strokeWidth=1;endArrow=none;endFill=0;endSize=9;startArrow=none;dashed=1;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="210" as="sourcePoint" />
+            <mxPoint x="140" y="1665" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sequence-6" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#eef3f7;strokeColor=#263445;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="133" width="230" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-7" value=":Система магазину" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=16;fontStyle=1;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="340" y="137" width="220" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-8" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#8b97a3;strokeWidth=1;endArrow=none;endFill=0;endSize=9;startArrow=none;dashed=1;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="210" as="sourcePoint" />
+            <mxPoint x="450" y="1665" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sequence-9" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#eef3f7;strokeColor=#263445;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="645" y="133" width="230" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-10" value=":Каталог і склад" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=16;fontStyle=1;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="650" y="137" width="220" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-11" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#8b97a3;strokeWidth=1;endArrow=none;endFill=0;endSize=9;startArrow=none;dashed=1;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="760" y="210" as="sourcePoint" />
+            <mxPoint x="760" y="1665" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sequence-12" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#eef3f7;strokeColor=#263445;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="955" y="133" width="230" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-13" value=":Платіжний сервіс" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=16;fontStyle=1;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="960" y="137" width="220" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-14" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#8b97a3;strokeWidth=1;endArrow=none;endFill=0;endSize=9;startArrow=none;dashed=1;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1070" y="210" as="sourcePoint" />
+            <mxPoint x="1070" y="1665" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sequence-15" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=0;fillColor=#ffffff;strokeColor=#263445;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="1361" y="111" width="38" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-16" value="Флорист" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=16;fontStyle=1;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="179" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-17" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#8b97a3;strokeWidth=1;endArrow=none;endFill=0;endSize=9;startArrow=none;dashed=1;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1380" y="210" as="sourcePoint" />
+            <mxPoint x="1380" y="1665" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sequence-18" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#263445;strokeWidth=1.5;endArrow=block;endFill=1;endSize=9;startArrow=none;dashed=0;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="270" as="sourcePoint" />
+            <mxPoint x="450" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sequence-19" value="1. Запросити каталог&#10;композицій" style="text;html=0;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="150" y="221" width="290" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-20" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#263445;strokeWidth=1.5;endArrow=block;endFill=1;endSize=9;startArrow=none;dashed=0;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="348" as="sourcePoint" />
+            <mxPoint x="760" y="348" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sequence-21" value="2. Отримати доступні&#10;композиції" style="text;html=0;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="460" y="299" width="290" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-22" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#263445;strokeWidth=1.5;endArrow=open;endFill=0;endSize=9;startArrow=none;dashed=1;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="760" y="426" as="sourcePoint" />
+            <mxPoint x="450" y="426" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sequence-23" value="3. Перелік композицій&#10;та ціни" style="text;html=0;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="460" y="377" width="290" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-24" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#263445;strokeWidth=1.5;endArrow=open;endFill=0;endSize=9;startArrow=none;dashed=1;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="504" as="sourcePoint" />
+            <mxPoint x="140" y="504" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sequence-25" value="4. Показати каталог" style="text;html=0;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="150" y="455" width="290" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-26" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#263445;strokeWidth=1.5;endArrow=block;endFill=1;endSize=9;startArrow=none;dashed=0;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="582" as="sourcePoint" />
+            <mxPoint x="450" y="582" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sequence-27" value="5. Оформити замовлення" style="text;html=0;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="150" y="533" width="290" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-28" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#263445;strokeWidth=1.5;endArrow=block;endFill=1;endSize=9;startArrow=none;dashed=0;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="660" as="sourcePoint" />
+            <mxPoint x="760" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sequence-29" value="6. Перевірити та&#10;зарезервувати квіти" style="text;html=0;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="460" y="611" width="290" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-30" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#263445;strokeWidth=1.5;endArrow=open;endFill=0;endSize=9;startArrow=none;dashed=1;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="760" y="738" as="sourcePoint" />
+            <mxPoint x="450" y="738" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sequence-31" value="7. Наявність і резерв&#10;підтверджено" style="text;html=0;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="460" y="689" width="290" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-32" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#263445;strokeWidth=1.5;endArrow=block;endFill=1;endSize=9;startArrow=none;dashed=0;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="816" as="sourcePoint" />
+            <mxPoint x="450" y="841" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="575" y="816" />
+              <mxPoint x="575" y="841" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sequence-33" value="8. Створити замовлення&#10;«Очікує оплати»" style="text;html=0;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="458" y="768" width="285" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-34" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#263445;strokeWidth=1.5;endArrow=block;endFill=1;endSize=9;startArrow=none;dashed=0;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="894" as="sourcePoint" />
+            <mxPoint x="1070" y="894" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sequence-35" value="9. Створити платіж" style="text;html=0;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="460" y="845" width="600" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-36" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#263445;strokeWidth=1.5;endArrow=open;endFill=0;endSize=9;startArrow=none;dashed=1;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1070" y="972" as="sourcePoint" />
+            <mxPoint x="450" y="972" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sequence-37" value="10. Посилання на оплату" style="text;html=0;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="460" y="923" width="600" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-38" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#263445;strokeWidth=1.5;endArrow=open;endFill=0;endSize=9;startArrow=none;dashed=1;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="1050" as="sourcePoint" />
+            <mxPoint x="140" y="1050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sequence-39" value="11. Номер замовлення,&#10;сума та посилання" style="text;html=0;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1001" width="290" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-40" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#263445;strokeWidth=1.5;endArrow=block;endFill=1;endSize=9;startArrow=none;dashed=0;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="1128" as="sourcePoint" />
+            <mxPoint x="1070" y="1128" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sequence-41" value="12. Оплатити замовлення" style="text;html=0;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1079" width="910" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-42" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#263445;strokeWidth=1.5;endArrow=open;endFill=0;endSize=9;startArrow=none;dashed=1;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1070" y="1206" as="sourcePoint" />
+            <mxPoint x="450" y="1206" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sequence-43" value="13. Оплату підтверджено" style="text;html=0;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1157" width="600" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-44" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#263445;strokeWidth=1.5;endArrow=block;endFill=1;endSize=9;startArrow=none;dashed=0;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="1284" as="sourcePoint" />
+            <mxPoint x="450" y="1309" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="575" y="1284" />
+              <mxPoint x="575" y="1309" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sequence-45" value="14. Змінити статус&#10;на «Оплачено»" style="text;html=0;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="458" y="1236" width="285" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-46" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#263445;strokeWidth=1.5;endArrow=open;endFill=0;endSize=9;startArrow=none;dashed=1;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="1362" as="sourcePoint" />
+            <mxPoint x="140" y="1362" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sequence-47" value="15. Підтвердити прийняття&#10;замовлення" style="text;html=0;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1313" width="290" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-48" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#263445;strokeWidth=1.5;endArrow=block;endFill=1;endSize=9;startArrow=none;dashed=0;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="1440" as="sourcePoint" />
+            <mxPoint x="1380" y="1440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sequence-49" value="16. Передати завдання на виготовлення" style="text;html=0;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1391" width="910" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-50" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#263445;strokeWidth=1.5;endArrow=block;endFill=1;endSize=9;startArrow=none;dashed=0;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1380" y="1518" as="sourcePoint" />
+            <mxPoint x="450" y="1518" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sequence-51" value="17. Повідомити про готовність композиції" style="text;html=0;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1469" width="910" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-52" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#263445;strokeWidth=1.5;endArrow=block;endFill=1;endSize=9;startArrow=none;dashed=0;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="1596" as="sourcePoint" />
+            <mxPoint x="140" y="1596" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sequence-53" value="18. Повідомити про&#10;можливість отримання" style="text;html=0;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1547" width="290" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-54" value="Час іде згори вниз. Пунктирні вертикальні лінії — лінії життя учасників." style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1685" width="1400" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="sequence-55" value="Пояснення всіх 18 повідомлень наведено на окремій сторінці «Опис повідомлень»." style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1717" width="1400" height="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="messages" name="Опис повідомлень">
+    <mxGraphModel dx="1500" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="1630" math="0" shadow="0" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="messages-1" value="Опис повідомлень діаграми послідовності" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=25;fontStyle=1;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="65" y="26" width="1170" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-2" value="Прецедент: замовлення квіткової композиції у квітковому магазині." style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=16;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="65" y="84" width="1170" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-3" value="Сценарій: покупець оформлює замовлення через сайт, оплачує його онлайн та отримує готову композицію в магазині." style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=15;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="65" y="120" width="1170" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-4" value="Учасники: покупець, система магазину, каталог і склад, платіжний сервіс, флорист." style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=15;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="65" y="180" width="1170" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-5" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#e5edf4;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="65" y="230" width="55" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-6" value="№" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=15;fontStyle=1;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="69" y="234" width="47" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-7" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#e5edf4;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="230" width="340" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-8" value="Повідомлення" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=15;fontStyle=1;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="124" y="234" width="332" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-9" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#e5edf4;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="230" width="775" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-10" value="Короткий опис" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=15;fontStyle=1;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="464" y="234" width="767" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-11" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="65" y="278" width="55" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-12" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="278" width="340" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-13" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="278" width="775" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-14" value="1" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="69" y="284" width="47" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-15" value="Запросити каталог композицій" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="126" y="284" width="328" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-16" value="Покупець відкриває каталог квіткових композицій." style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="466" y="284" width="763" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-17" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7f9fb;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="65" y="348" width="55" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-18" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7f9fb;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="348" width="340" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-19" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7f9fb;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="348" width="775" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-20" value="2" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="69" y="354" width="47" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-21" value="Отримати доступні композиції" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="126" y="354" width="328" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-22" value="Система запитує в каталозі перелік доступних товарів." style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="466" y="354" width="763" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-23" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="65" y="418" width="55" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-24" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="418" width="340" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-25" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="418" width="775" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-26" value="3" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="69" y="424" width="47" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-27" value="Перелік композицій та ціни" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="126" y="424" width="328" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-28" value="Каталог повертає назви, описи та ціни композицій." style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="466" y="424" width="763" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-29" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7f9fb;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="65" y="488" width="55" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-30" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7f9fb;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="488" width="340" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-31" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7f9fb;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="488" width="775" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-32" value="4" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="69" y="494" width="47" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-33" value="Показати каталог" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="126" y="494" width="328" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-34" value="Система відображає отриману інформацію покупцеві." style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="466" y="494" width="763" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-35" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="65" y="558" width="55" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-36" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="558" width="340" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-37" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="558" width="775" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-38" value="5" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="69" y="564" width="47" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-39" value="Оформити замовлення" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="126" y="564" width="328" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-40" value="Покупець передає обрану композицію, кількість, побажання, контактні дані та час самовивозу." style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="466" y="564" width="763" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-41" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7f9fb;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="65" y="628" width="55" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-42" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7f9fb;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="628" width="340" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-43" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7f9fb;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="628" width="775" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-44" value="6" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="69" y="634" width="47" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-45" value="Перевірити та зарезервувати квіти" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="126" y="634" width="328" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-46" value="Система перевіряє наявність потрібних квітів і резервує їх для замовлення." style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="466" y="634" width="763" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-47" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="65" y="698" width="55" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-48" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="698" width="340" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-49" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="698" width="775" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-50" value="7" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="69" y="704" width="47" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-51" value="Наявність і резерв підтверджено" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="126" y="704" width="328" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-52" value="Склад повідомляє, що необхідні матеріали доступні й зарезервовані." style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="466" y="704" width="763" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-53" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7f9fb;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="65" y="768" width="55" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-54" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7f9fb;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="768" width="340" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-55" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7f9fb;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="768" width="775" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-56" value="8" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="69" y="774" width="47" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-57" value="Створити замовлення «Очікує оплати»" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="126" y="774" width="328" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-58" value="Система зберігає замовлення, присвоює йому номер і визначає загальну суму." style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="466" y="774" width="763" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-59" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="65" y="838" width="55" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-60" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="838" width="340" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-61" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="838" width="775" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-62" value="9" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="69" y="844" width="47" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-63" value="Створити платіж" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="126" y="844" width="328" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-64" value="Система передає платіжному сервісу номер замовлення та суму до сплати." style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="466" y="844" width="763" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-65" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7f9fb;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="65" y="908" width="55" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-66" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7f9fb;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="908" width="340" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-67" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7f9fb;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="908" width="775" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-68" value="10" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="69" y="914" width="47" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-69" value="Посилання на оплату" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="126" y="914" width="328" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-70" value="Платіжний сервіс повертає посилання для здійснення платежу." style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="466" y="914" width="763" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-71" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="65" y="978" width="55" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-72" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="978" width="340" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-73" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="978" width="775" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-74" value="11" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="69" y="984" width="47" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-75" value="Номер замовлення, сума та посилання" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="126" y="984" width="328" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-76" value="Система показує покупцеві дані замовлення й можливість переходу до оплати." style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="466" y="984" width="763" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-77" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7f9fb;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="65" y="1048" width="55" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-78" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7f9fb;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1048" width="340" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-79" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7f9fb;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1048" width="775" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-80" value="12" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="69" y="1054" width="47" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-81" value="Оплатити замовлення" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="126" y="1054" width="328" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-82" value="Покупець здійснює оплату через платіжний сервіс." style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="466" y="1054" width="763" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-83" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="65" y="1118" width="55" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-84" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1118" width="340" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-85" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1118" width="775" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-86" value="13" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="69" y="1124" width="47" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-87" value="Оплату підтверджено" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="126" y="1124" width="328" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-88" value="Платіжний сервіс повідомляє системі про успішну оплату." style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="466" y="1124" width="763" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-89" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7f9fb;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="65" y="1188" width="55" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-90" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7f9fb;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1188" width="340" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-91" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7f9fb;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1188" width="775" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-92" value="14" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="69" y="1194" width="47" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-93" value="Змінити статус на «Оплачено»" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="126" y="1194" width="328" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-94" value="Система оновлює статус збереженого замовлення." style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="466" y="1194" width="763" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-95" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="65" y="1258" width="55" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-96" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1258" width="340" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-97" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1258" width="775" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-98" value="15" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="69" y="1264" width="47" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-99" value="Підтвердити прийняття замовлення" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="126" y="1264" width="328" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-100" value="Покупець отримує підтвердження, що замовлення прийнято до виконання." style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="466" y="1264" width="763" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-101" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7f9fb;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="65" y="1328" width="55" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-102" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7f9fb;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1328" width="340" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-103" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7f9fb;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1328" width="775" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-104" value="16" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="69" y="1334" width="47" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-105" value="Передати завдання на виготовлення" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="126" y="1334" width="328" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-106" value="Флорист отримує склад композиції, кількість, побажання та строк готовності." style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="466" y="1334" width="763" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-107" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="65" y="1398" width="55" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-108" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1398" width="340" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-109" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1398" width="775" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-110" value="17" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="69" y="1404" width="47" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-111" value="Повідомити про готовність композиції" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="126" y="1404" width="328" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-112" value="Після виготовлення флорист повідомляє системі, що замовлення готове." style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="466" y="1404" width="763" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-113" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7f9fb;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="65" y="1468" width="55" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-114" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7f9fb;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1468" width="340" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-115" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7f9fb;strokeColor=#b8c4cf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1468" width="775" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-116" value="18" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="69" y="1474" width="47" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-117" value="Повідомити про можливість отримання" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="126" y="1474" width="328" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-118" value="Система сповіщає покупця, що композицію можна забрати в магазині." style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="466" y="1474" width="763" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="messages-119" value="Нумерація відповідає повідомленням на сторінці «Діаграма послідовності»." style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#263445;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="65" y="1555" width="1170" height="32" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

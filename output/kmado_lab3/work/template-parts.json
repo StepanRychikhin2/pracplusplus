@@ -1,0 +1,122 @@
+{
+  "[Content_Types].xml": {
+    "size": 2638,
+    "sha256": "a4888b108d0ef072cf677d60fced527f003a94ff4ab38ea4d0e2d3f9f15c414a"
+  },
+  "_rels/.rels": {
+    "size": 737,
+    "sha256": "c30fe099dbcfed4ecc4ae544ccf82f432c8d3bb665e2a301df283738b196d803"
+  },
+  "word/_rels/document.xml.rels": {
+    "size": 2193,
+    "sha256": "27f63249aa77cbca41e53c50e7649589a6379d59697103a130cc58b7c513a2fc"
+  },
+  "word/document.xml": {
+    "size": 61983,
+    "sha256": "3539767584dd0bb47d440f6cb8446da1f751f7fc1fefe717baf3c13c6b0f1719"
+  },
+  "word/header1.xml": {
+    "size": 3116,
+    "sha256": "d57215c9406f025151e881edb122509eced0e32d8111cefb63b3a69674b2e280"
+  },
+  "word/footnotes.xml": {
+    "size": 1989,
+    "sha256": "dae4006176c093ab42662e38c8e326517c4e9292730dd45991b1e26e61d35b81"
+  },
+  "word/endnotes.xml": {
+    "size": 1983,
+    "sha256": "09c6965b273169afacaa97a59d136671b5a2da98ad06663f71280f528e2c767d"
+  },
+  "word/media/image1.wmf": {
+    "size": 1270,
+    "sha256": "abb005e517d3203e714276216d112294732a52dacee233a8090176b2cceed5e0"
+  },
+  "word/embeddings/oleObject1.bin": {
+    "size": 3584,
+    "sha256": "4894a2e2311fe5680cb13a43bb4483fa5719b7a7d02e842f20cd987f89147dbb"
+  },
+  "word/theme/theme1.xml": {
+    "size": 7043,
+    "sha256": "705585663ba72fb917a0b66645256049e8a554fd77b0e06ab53131acddb5ec3e"
+  },
+  "word/settings.xml": {
+    "size": 8330,
+    "sha256": "46789a9bbb017622e644fdbda639ce8bbbc2196aa9b9a9e8e6142f49d471fd10"
+  },
+  "customXml/itemProps1.xml": {
+    "size": 425,
+    "sha256": "00b1cff4a0230ded08729be5e546122f22dc1f92b2fea74083375ab017787ce1"
+  },
+  "docProps/app.xml": {
+    "size": 996,
+    "sha256": "e838e73ab17081586a01ff2e147fb85eb52bf986a9b9d7655b30538ee72b2ac3"
+  },
+  "customXml/itemProps2.xml": {
+    "size": 335,
+    "sha256": "316351d90ef8abc12cc0017854c88f986a6c2f585207db998ee7598afb64e0f3"
+  },
+  "customXml/_rels/item4.xml.rels": {
+    "size": 296,
+    "sha256": "3c0d4d955517fe8112c945b1e56f63d5bef3c0005ccb627e40acda432e1cdc1d"
+  },
+  "customXml/_rels/item3.xml.rels": {
+    "size": 296,
+    "sha256": "3aa4054f7f463c6d441102c960783aa7f937d6945a0a885b624a66aafaeedb6c"
+  },
+  "customXml/_rels/item2.xml.rels": {
+    "size": 296,
+    "sha256": "2a6aee4c8a9714223a3568077411a0c82d11b484b1c9ab93a19d50b99c57baa5"
+  },
+  "customXml/_rels/item1.xml.rels": {
+    "size": 296,
+    "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+  },
+  "docProps/custom.xml": {
+    "size": 402,
+    "sha256": "a3fc0384b4c1a4d7929fc1e2f75d2ac895d5b8a2aa8372321712f04bca21144c"
+  },
+  "customXml/item2.xml": {
+    "size": 219,
+    "sha256": "5efcaf9ad70d9c29f406ee438f8f428b021a881d2c5afff0e53b00b1f67ae51e"
+  },
+  "customXml/item1.xml": {
+    "size": 290,
+    "sha256": "b21b9cc9ff7d68daa06bcedaff78dd324bc614fe6c7d930ff92d2fd4a04a1106"
+  },
+  "word/fontTable.xml": {
+    "size": 1334,
+    "sha256": "01b8caa16af8b4226c2a900f73022145b8bb2a91ada62683ef2db167e919ff26"
+  },
+  "customXml/item3.xml": {
+    "size": 9717,
+    "sha256": "9b2eb38095ec027d804246c338d76d7ce06d3439903341b88c2fef48fcfca30a"
+  },
+  "customXml/itemProps3.xml": {
+    "size": 1149,
+    "sha256": "c90a652d3e7d760e0ef52a043bf684399f45ef28f2d5eee9931ca292127a31f3"
+  },
+  "customXml/item4.xml": {
+    "size": 306,
+    "sha256": "64a56efd64d49e759fe8705700562e79a4792fc7885a1351e30e5f3651f7247c"
+  },
+  "customXml/itemProps4.xml": {
+    "size": 341,
+    "sha256": "9886fd6ee4e96b22041c38c5a26fcf30e94b44a23025abb01d22903ce30e4fc1"
+  },
+  "word/numbering.xml": {
+    "size": 7145,
+    "sha256": "2c8b1dbb25fa243dcdc26d6c2e86b6f7da945f272644c837f0915e816011cb2d"
+  },
+  "word/styles.xml": {
+    "size": 34680,
+    "sha256": "2b59f016bbafed5235f6e97a41c6fbac4d55a29f059123380cc077112f06d369"
+  },
+  "word/webSettings.xml": {
+    "size": 2203,
+    "sha256": "8463677e72c0ff61dc525d768c14797973d202cbd7683a80aa3500d4e8662c24"
+  },
+  "docProps/core.xml": {
+    "size": 676,
+    "sha256": "d6a3f4106c8a0ce769503c981db1f9ee63d8ea39c803313e21078808707e5807"
+  }
+}
